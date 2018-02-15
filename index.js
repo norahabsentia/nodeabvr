@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 // app.use(express.static(__dirname + '/www'));
 app.get('/', function(req, res) {
 
-    res.send("Use /json endpoint tp send POST requests")
+    res.send("Use /json endpoint to send POST requests")
 });
 app.post('/json', function(req, res) {
     console.log(req.body);
