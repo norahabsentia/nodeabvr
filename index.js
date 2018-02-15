@@ -7,6 +7,10 @@ var bodyParser = require('body-parser')
 var connectionCount = 0;
 app.use(bodyParser.json());
 // app.use(express.static(__dirname + '/www'));
+app.get('/', function(req, res) {
+
+    res.send("Use /json endpoint tp send POST requests")
+});
 app.post('/json', function(req, res) {
     console.log(req.body);
     res.sendStatus(200)
