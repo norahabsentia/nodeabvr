@@ -1,0 +1,23 @@
+{
+  "name": "nodeabvr",
+  "version": "1.0.0",
+  "description": "nodeabvr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norahabsentia/nodeabvr.git"
+  },
+  "author": "Akash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norahabsentia/nodeabvr/issues"
+  },
+  "homepage": "https://github.com/norahabsentia/nodeabvr#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
