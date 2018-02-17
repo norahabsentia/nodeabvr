@@ -15,10 +15,11 @@ app.post('/json', function(req, res) {
     console.log(req.body);
     res.sendStatus(200)
 });
-app.get('/json', function(req, res) {
+app.post('/pushdata', function(req, res) {
     console.log(req.body);
     res.sendStatus(200)
 });
+
 server.listen(port, function() {
     console.log("Listening on port " + port + "...");
 });
