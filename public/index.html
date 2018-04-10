@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+
+    <link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/animate.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <style>
+        @font-face {
+            font-family: century;
+            src: url(CenturyGothicRegular.ttf);
+        }
+    </style>
+</head>
+
+<body style="text-align: center">
+
+    <h1 style='font-family: century;'>HDFC Yaris Demo</h1>
+    <div id="videoPlayerWrapper" class="b-video-player-wrapper">
+        <div id="textAnimationBlock" class="b-text-animation">
+            <div class="charlie js-name" data-animations="textAnimate1" data-times="1.3" id="textAnimate1"></div>
+            <div class="charlie js-month" data-animations="textAnimate2" data-times="32.7" id="textAnimate2"></div>
+
+            <div class="charlie" data-animations="textAnimate3" data-times="43.5" id="animate3">
+                <div class="charlie animate3__line1" data-animations="textAnimate3Letter, textAnimate3LetterOut" data-times="43.7, 45.3">Your loan eligibility :</div>
+                <div class="charlie animate3__line2" data-animations="textAnimate3Letter, textAnimate3LetterOut" data-times="43.8, 45.3"></div>
+            </div>
+
+            <div class="animate5">
+                <div class="charlie line1 button button__right" data-animations="animate5__line1" data-times="56.5"><a href="https://www.hdfcbank.com/personal/products/loans/car-loans/new-car-loans" target="_blank">Apply here</a></div>
+                <div class="charlie line2 button button__left" data-animations="animate5__line2" data-times="56.5"><a href="https://www.youtube.com/watch?v=fL6mdFHArgY&t=18s" target="_blank">Know More</a></div>
+            </div>
+
+            <div id="animate_finish"></div>
+
+
+        </div>
+    </div>
+
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+
+    <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+    <script src="app/js/charlie.js"></script>
+    <script src="app/js/index.js"></script>
+</body>
+
+</html>

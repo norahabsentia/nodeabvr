@@ -6,20 +6,9 @@ var server = http.createServer(app).listen(port);
 var bodyParser = require('body-parser')
 var connectionCount = 0;
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/public'));
 // app.use(express.static(__dirname + '/www'));
-app.get('/', function(req, res) {
 
-    res.send("Use /json endpoint to send POST requests")
-});
-app.post('/json', function(req, res) {
-    console.log(req.body);
-    res.sendStatus(200)
-});
-app.post('/pushdata', function(req, res) {
-    console.log(req.body);
-    res.sendStatus(200)
-});
-
-server.listen(port, function() {
-    console.log("Listening on port " + port + "...");
-});
+// server.listen(port, function() {
+//     console.log("Listening on port " + port + "...");
+// });
