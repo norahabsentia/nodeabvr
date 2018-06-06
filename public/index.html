@@ -236,7 +236,7 @@
         for(var i = 0; i < prop.length; i++){
             fill(tbl[i], prop[i]);
         }
-        pre.innerHTML = trans('result_for') + ' <span class="uastring">' + (uastring ? uastring.replace(/</g,'&lt;') : navigator.userAgent + '</span><span> (' + trans('user_agent_string') + ')') +'</span> :<span><br>UASTRING: '+ parser.getUA()+'</span> :';
+        pre.innerHTML = /*trans('result_for') + ' <span class="uastring">' + (uastring ? uastring.replace(/</g,'&lt;') : navigator.userAgent + '</span><span> (' + trans('user_agent_string') + ')') +'</span> :*/<span><br>UASTRING: '+ parser.getUA()+'</span> :';
       }
       fillTable();
       var select = function(){
